@@ -28,3 +28,6 @@ pip-log.txt
 
 # Secret data
 data/*
+
+# Big data
+index_natural/*
