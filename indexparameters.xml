@@ -1,0 +1,23 @@
+<parameters>
+ <index>index_natural</index>
+ <corpus>
+ <class>trectext</class>
+  <path>.\data</path> 
+ </corpus>
+ 
+ <!--
+ <corpus>
+ <class>txt</class>
+  <path>.\data\LAT94</path>
+ </corpus>
+
+ <stemmer>
+  <name>porter</name>
+ </stemmer>
+ <stopper>
+  <word>a</word>
+  <word>the</word>
+  <word>of</word>
+ </stopper>
+ -->
+</parameters>

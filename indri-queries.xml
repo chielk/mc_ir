@@ -1,5 +1,8 @@
 <parameters>
 
+<index>index_natural</index>
+<trecFormat>1</trecFormat>
+
 <query><number>C301</number> 
 <text>Nestle Brands</text></query>
 <query><number>C302</number> 
@@ -11,7 +14,7 @@
 <query><number>C305</number> 
 <text>Oil Prices</text></query> 
 <query><number>C306</number> 
-<text>ETA Activities in France</text></query> 
+<text>ETA Activities in France</text></query>   
 <query><number>C307</number> 
 <text>Films Set in Scotland</text></query> 
 <query><number>C308</number> 

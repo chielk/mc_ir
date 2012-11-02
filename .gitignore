@@ -31,3 +31,6 @@ data/*
 
 # Big data
 index_natural/*
+
+# Temp data
+temp/*
