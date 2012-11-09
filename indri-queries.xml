@@ -1,6 +1,6 @@
 <parameters>
 
-<index>index_natural</index>
+<index>index_stemmed</index>
 <trecFormat>1</trecFormat>
 
 <query><number>C301</number> 

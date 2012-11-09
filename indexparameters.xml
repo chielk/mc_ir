@@ -1,19 +1,20 @@
 <parameters>
- <index>index_natural</index>
+ <index>index_stemmed</index>
  <corpus>
  <class>trectext</class>
-  <path>.\data</path> 
+  <path>./data</path> 
  </corpus>
  
+ <stemmer>
+  <name>porter</name>
+ </stemmer>
+
  <!--
  <corpus>
  <class>txt</class>
   <path>.\data\LAT94</path>
  </corpus>
 
- <stemmer>
-  <name>porter</name>
- </stemmer>
  <stopper>
   <word>a</word>
   <word>the</word>

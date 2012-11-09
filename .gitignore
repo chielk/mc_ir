@@ -30,7 +30,7 @@ pip-log.txt
 data/*
 
 # Big data
-index_natural/*
+index_*/*
 
 # Temp data
 temp/*
