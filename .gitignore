@@ -27,10 +27,10 @@ pip-log.txt
 .mr.developer.cfg
 
 # Secret data
-data/*
+*/data/*
 
 # Big data
-index_*/*
+*/index_*/*
 
 # Temp data
 temp/*

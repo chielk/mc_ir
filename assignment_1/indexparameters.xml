@@ -1,0 +1,17 @@
+<parameters>
+	<index>index_stemmed_stopper</index>
+	<corpus>
+		<class>trectext</class>
+		<path>./data</path>
+	</corpus>
+
+	<stemmer>
+		<name>porter</name>
+	</stemmer>
+
+	<stopper>
+		<word>a</word>
+		<word>the</word>
+		<word>of</word>
+	</stopper>
+</parameters>

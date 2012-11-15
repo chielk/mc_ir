@@ -1,6 +1,6 @@
 <parameters>
 
-<index>index_stemmed</index>
+<index>index_stemmed_stopper</index>
 <trecFormat>1</trecFormat>
 
 <query><number>C301</number> 
