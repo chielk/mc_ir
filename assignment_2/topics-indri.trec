@@ -1,0 +1,104 @@
+<parameters>
+
+<query><number>1</number>
+<text>genetic modification</text></query>
+<query><number>2</number>
+<text>hairpin RNAi gene silencing</text></query>
+<query><number>3</number>
+<text>sustainable agriculture</text></query>
+<query><number>4</number>
+<text>climate change</text></query>
+<query><number>5</number>
+<text>fire</text></query>
+<query><number>6</number>
+<text>sustainable ecosystems</text></query>
+<query><number>7</number>
+<text>air guitar textile sensors</text></query>
+<query><number>8</number>
+<text>carbon nanotube yarns and sheets</text></query>
+<query><number>9</number>
+<text>medical textiles smart textiles</text></query>
+<query><number>10</number>
+<text>arsenic treated timber </text></query>
+<query><number>11</number>
+<text>world leading Australian aerospace tech </text></query>
+<query><number>12</number>
+<text>cancer risk</text></query>
+<query><number>13</number>
+<text>human clinical trials</text></query>
+<query><number>14</number>
+<text>high protein diet</text></query>
+<query><number>15</number>
+<text>life cycle assessment</text></query>
+<query><number>16</number>
+<text>beneficiation</text></query>
+<query><number>17</number>
+<text>improving cement production</text></query>
+<query><number>18</number>
+<text>sensor networks</text></query>
+<query><number>19</number>
+<text>telecollaboration and virtual offices</text></query>
+<query><number>20</number>
+<text>mining robotics</text></query>
+<query><number>21</number>
+<text>drilling</text></query>
+<query><number>22</number>
+<text>airborne hyperspectral</text></query>
+<query><number>23</number>
+<text>science experiments</text></query>
+<query><number>24</number>
+<text>Double Helix Science Club</text></query>
+<query><number>25</number>
+<text>science education</text></query>
+<query><number>26</number>
+<text>radio astronomy</text></query>
+<query><number>27</number>
+<text>H5NI avian influenza</text></query>
+<query><number>28</number>
+<text>air cargo scanner</text></query>
+<query><number>29</number>
+<text>Omega-3 grains</text></query>
+<query><number>30</number>
+<text>T-mag</text></query>
+<query><number>31</number>
+<text>dysphagia</text></query>
+<query><number>32</number>
+<text>machine vision</text></query>
+<query><number>33</number>
+<text>dung beetle</text></query>
+<query><number>34</number>
+<text>carp</text></query>
+<query><number>35</number>
+<text>nanohouse</text></query>
+<query><number>36</number>
+<text>termites</text></query>
+<query><number>37</number>
+<text>river Murray</text></query>
+<query><number>38</number>
+<text>managing salinity</text></query>
+<query><number>39</number>
+<text>cane toads</text></query>
+<query><number>40</number>
+<text>Southern Surveyor</text></query>
+<query><number>41</number>
+<text>solar energy</text></query>
+<query><number>42</number>
+<text>ocean currents and conditions</text></query>
+<query><number>43</number>
+<text>resilin</text></query>
+<query><number>44</number>
+<text>rabbits</text></query>
+<query><number>45</number>
+<text>cloud seeding</text></query>
+<query><number>46</number>
+<text>recycled water</text></query>
+<query><number>47</number>
+<text>invasive plant species</text></query>
+<query><number>48</number>
+<text>polymer bank notes</text></query>
+<query><number>49</number>
+<text>atmosphere</text></query>
+<query><number>50</number>
+<text>air pollution</text></query>
+
+</parameters>
