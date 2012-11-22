@@ -1,5 +1,8 @@
 <parameters>
 
+<index>index_natural</index>
+<trecFormat>1</trecFormat>
+
 <query><number>1</number>
 <text>genetic modification</text></query>
 <query><number>2</number>
