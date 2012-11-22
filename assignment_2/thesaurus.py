@@ -1,5 +1,8 @@
 import mechanize
 import json
+import re
+import sys
+
 try:
     from th_cache import cache
 except:
@@ -24,7 +27,7 @@ class Thesaurus:
                 cache[word] = []
                 r = self.br.open(url % word)
                 for line in json.loads(r.read()[8:-1])['response']:
-                    l = line['list']['synonyms'].split('|')
+                    l = map(lambda x: re.sub(r" \(.*", "" , x), line['list']['synonyms'].split('|'))
                     cache[word].append(l)
                     yield l
             except:
@@ -39,7 +42,7 @@ class Thesaurus:
 
 def main():
     t = Thesaurus()
-    r = t.get('language')
+    r = t.get('genetic')
     for line in r:
         print line
 
