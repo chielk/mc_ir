@@ -32,7 +32,7 @@ class Thesaurus:
                 cache[word] = result
                 return result
             except:
-                pass
+                return []
 
     def __del__(self):
         """Save cache"""
