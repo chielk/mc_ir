@@ -20,17 +20,17 @@ class Thesaurus:
 
     def get(self, word):
         if word in cache:
-            for l in cache[word]:
-                yield l
+            return cache[word]
         else:
             try:
                 cache[word] = []
                 r = self.br.open(url % word)
+                result = []
                 for line in json.loads(r.read()[8:-1])['response']:
-                    l = map(lambda x: re.sub(r" \(.*", "" , x),
-                            re.split('[\W\|]', line['list']['synonyms'])
-                    cache[word].append(l)
-                    yield l
+                    l = re.split('[\s\|]', re.sub(r" \(.*", "" , line['list']['synonyms']))
+                    result.extend(l)
+                cache[word] = result
+                return result
             except:
                 pass
 
