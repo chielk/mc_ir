@@ -27,7 +27,8 @@ class Thesaurus:
                 cache[word] = []
                 r = self.br.open(url % word)
                 for line in json.loads(r.read()[8:-1])['response']:
-                    l = map(lambda x: re.sub(r" \(.*", "" , x), line['list']['synonyms'].split('|'))
+                    l = map(lambda x: re.sub(r" \(.*", "" , x),
+                            re.split('[\W\|]', line['list']['synonyms'])
                     cache[word].append(l)
                     yield l
             except:
