@@ -34,3 +34,6 @@ pip-log.txt
 
 # Temp data
 temp/*
+
+# cache
+assignment_2/th_cache.py
