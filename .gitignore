@@ -1,4 +1,6 @@
 *.py[co]
+*.txt
+*.trec
 
 # Packages
 *.egg
