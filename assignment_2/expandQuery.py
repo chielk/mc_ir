@@ -28,15 +28,18 @@ def expand(inputFileName, outputFileName, thesaurus, synWeight):
     tree = ET.parse(inputFileName)
     treeRoot = tree.getroot()
     for tag in treeRoot.findall('query'): # for each query
+        q = tag.find('text').text.split()
         query = tag.find('text')
-        query.text += " #wsyn( " # weighted synonyms
-        for word in query.text.split(): # for each word in query
+        query.text = ""
+        for word in q: # for each word in query
+            query.text += " #wsyn( 1.0 " + word # weighted synonyms
             for syn in thesaurus.get(word): # find synonyms
                 query.text += " %.1f %s " % (synWeight, syn)
-            
-        query.text += ")" # end weighted synonyms
+            query.text += ")" # end weighted synonyms
     tree.write(outputFileName)
 
     
 if __name__ == "__main__":
-    main()
+    ts = Thesaurus()
+    expand("topics-indri-qe.trec", "testWeights.txt", ts, 0.1)
+    #main()
