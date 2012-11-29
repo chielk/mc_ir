@@ -12,6 +12,11 @@ key = "OMgWqQArqygX3ZGDIBOr"
 host = "http://thesaurus.altervista.org/service.php"
 url = host+"?word=%s&language=en_US&output=json&key="+key+"&callback=process"
 
+def fix_compound(word):
+    if " " in word:
+        return "#1(" + word + ")"
+    return word
+
 class Thesaurus:
     def __init__(self):
         """Initialise browser and load cache"""
@@ -27,11 +32,13 @@ class Thesaurus:
                 r = self.br.open(url % word)
                 result = []
                 for line in json.loads(r.read()[8:-1])['response']:
-                    l = re.split('[\s\|]', re.sub(r" \(.*", "" , line['list']['synonyms']))
+                    l = re.split('\|', re.sub(r" \(.*", "" , line['list']['synonyms']))
+                    l = map(lambda word: fix_compound(word), l)
                     result.extend(l)
                 cache[word] = result
                 return result
-            except:
+            except Exception as e:
+                print e
                 return []
 
     def __del__(self):
@@ -43,7 +50,7 @@ class Thesaurus:
 
 def main():
     t = Thesaurus()
-    r = t.get('genetic')
+    r = t.get('change')
     for line in r:
         print line
 

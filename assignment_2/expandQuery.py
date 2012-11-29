@@ -38,8 +38,8 @@ def expand(inputFileName, outputFileName, thesaurus, synWeight):
             query.text += ")" # end weighted synonyms
     tree.write(outputFileName)
 
-    
+
 if __name__ == "__main__":
-    ts = Thesaurus()
-    expand("topics-indri-qe.trec", "testWeights.txt", ts, 0.1)
-    #main()
+    #ts = Thesaurus()
+    #expand("topics-indri-qe.trec", "testWeights.txt", ts, 0.1)
+    main()
