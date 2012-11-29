@@ -38,7 +38,7 @@ class Thesaurus:
                 cache[word] = result
                 return result
             except Exception as e:
-                print e
+                #print "Exception while getting thesaurus data: " + str(e)
                 return []
 
     def __del__(self):
