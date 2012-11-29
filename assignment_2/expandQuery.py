@@ -30,7 +30,7 @@ def expand(inputFileName, outputFileName, thesaurus, synWeight):
     for tag in treeRoot.findall('query'): # for each query
         qList = tag.find('text').text.split() # query list
         query = tag.find('text')
-        query.text = "#weights("
+        query.text = "#weight("
         for q in qList:
             query.text += " 1.0 %s" %q
         for word in qList: # for each word in query
