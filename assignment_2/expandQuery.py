@@ -32,7 +32,7 @@ def expand(inputFileName, outputFileName, thesaurus, synWeight):
         query = tag.find('text')
         query.text = ""
         for word in q: # for each word in query
-            query.text += " #wsyn( 1.0 " + word # weighted synonyms
+            query.text += " #weights( 1.0 " + word # weighted synonyms
             for syn in thesaurus.get(word): # find synonyms
                 query.text += " %.1f %s " % (synWeight, syn)
             query.text += ")" # end weighted synonyms
