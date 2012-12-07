@@ -4,9 +4,10 @@ from thesaurus import Thesaurus
 
 def main():
     ts = Thesaurus()
-    originalQueryFile = "topics-indri-qe.trec"
+    #originalQueryFile = "topics-indri-qe.trec"
+    originalQueryFile = "topics-indri.trec"
     trecRelFile = "document-qrels.txt"
-    for x in xrange(6):
+    for x in xrange(1):
         synWeight = x/10.0
         print "synWeight: %.1f" %synWeight
         # expand queries
@@ -42,5 +43,5 @@ def expand(inputFileName, outputFileName, thesaurus, synWeight):
 
 if __name__ == "__main__":
     #ts = Thesaurus()
-    #expand("topics-indri-qe.trec", "testWeights.txt", ts, 0.1)
+    #expand("topics-indri-qe.trec", "testQE0.txt", ts, 0.0)
     main()
