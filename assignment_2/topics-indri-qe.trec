@@ -3,7 +3,7 @@
 <index>index_natural</index>
 <trecFormat>1</trecFormat>
 
-<fbdocs>20</fbdocs>
+<fbDocs>20</fbDocs>
 <fbTerms>10</fbTerms>
 <fbMu>0</fbMu>
 <fbOrigWeight>0.7</fbOrigWeight>
